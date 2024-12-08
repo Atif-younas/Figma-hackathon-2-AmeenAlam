@@ -6,6 +6,7 @@ import Reviews from "@/components/homepage/Reviews";
 import { Product } from "@/types/product.types";
 import { Review } from "@/types/review.types";
 
+// Product Data
 export const newArrivalsData: Product[] = [
   {
     id: 1,
@@ -33,7 +34,7 @@ export const newArrivalsData: Product[] = [
   },
   {
     id: 3,
-    title: "Chechered Shirt",
+    title: "Chequered Shirt",
     srcUrl: "/images/pic3.png",
     gallery: ["/images/pic3.png"],
     price: 180,
@@ -159,6 +160,7 @@ export const relatedProductData: Product[] = [
   },
 ];
 
+// Reviews Data
 export const reviewsData: Review[] = [
   {
     id: 1,
@@ -183,10 +185,7 @@ export const reviewsData: Review[] = [
     rating: 5,
     date: "August 16, 2023",
   },
-  
-  
-  
-]
+];
 
 export default function Home() {
   return (
@@ -204,7 +203,7 @@ export default function Home() {
         </div>
         <div className="mb-[50px] sm:mb-20">
           <ProductListSec
-            title="top selling"
+            title="TOP SELLING"
             data={topSellingData}
             viewAllLink="/shop#top-selling"
           />
